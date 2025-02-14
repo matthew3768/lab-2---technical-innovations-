@@ -23,8 +23,10 @@ jobs:
           source venv/bin/activate
           pytest
       - name: Deploy Application
-        run: echo"Deploying application"
-
+        run: echo "Deploying application"
+        
+      - name: Use Secret Key
+        run: echo "Using secret key:${{ secrets.DEPLOYMENT_Y"KEY"
 
        
 
